@@ -1,5 +1,5 @@
 ======================
-django CMS Bootstrap 5
+django CMS Bootstrap 5 (WIP)
 ======================
 
 |pypi| |build| |coverage|
@@ -7,10 +7,13 @@ django CMS Bootstrap 5
 **django CMS Bootstrap 5** is a plugin bundle for django CMS providing several
 components from the popular `Bootstrap 5 <http://getbootstrap.com/>`_ library.
 
-This addon is compatible with `Divio Cloud <http://divio.com>`_ and is also available on the
-`django CMS Marketplace <https://marketplace.django-cms.org/en/addons/browse/djangocms-bootstrap5/>`_
-for easy installation.
 
+.. note:: 
+        
+        This project is endorsed by the `django CMS Association <https://www.django-cms.org/en/about-us/>`_.
+        That means that it is officially accepted by the dCA as being in line with our roadmap vision and development/plugin policy. 
+        Join us on `Slack <https://www.django-cms.org/slack/>`_.
+        
 .. image:: preview.gif
 
 
