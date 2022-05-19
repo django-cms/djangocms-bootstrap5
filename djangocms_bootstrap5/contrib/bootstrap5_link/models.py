@@ -44,11 +44,6 @@ class Bootstrap5Link(AbstractLink):
         default=False,
         help_text=_('Applies the .btn-outline class to the elements.'),
     )
-    link_block = models.BooleanField(
-        verbose_name=_('Block'),
-        default=False,
-        help_text=_('Extends the button to the width of its container.'),
-    )
     icon_left = Icon(
         verbose_name=_('Icon left'),
     )
