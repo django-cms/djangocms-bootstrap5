@@ -52,7 +52,7 @@ class Bootstrap5LinkPlugin(LinkPlugin):
         link_classes = []
         if instance.link_context:
             if instance.link_type == 'link':
-                link_classes.append('text-{}'.format(instance.link_context))
+                link_classes.append('link-{}'.format(instance.link_context))
             else:
                 link_classes.append('btn')
                 if not instance.link_outline:
