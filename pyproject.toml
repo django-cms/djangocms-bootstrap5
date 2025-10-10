@@ -20,7 +20,6 @@ classifiers = [
     "Framework :: Django",
     "Framework :: Django :: 4.2",
     "Framework :: Django :: 5.1",
-    "Framework :: Django :: 5.2",
     "Framework :: Django CMS",
     "Framework :: Django CMS :: 3.11",
     "Intended Audience :: Developers",
@@ -30,7 +29,6 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     "Topic :: Software Development",
@@ -61,7 +59,6 @@ conflicts = [
     [
         { group = "django42" },
         { group = "django51" },
-        { group = "django52" },
     ],
 ]
 
@@ -85,7 +82,6 @@ dev = [
 # Django version groups (compatible with Django CMS 3.7/3.8)
 django42 = ["django==4.2.*"]
 django51 = ["django==5.1.*"]
-django52 = ["django==5.2.*"]
 
 # Django CMS version groups
 cms311 = ["django-cms==3.11.*", "django-treebeard<4.5"]
