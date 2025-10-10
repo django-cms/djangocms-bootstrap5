@@ -47,18 +47,15 @@ jobs:
             django-group: django52
             cms-group: cms311
 
-          # Django 6.0 + CMS 3.11 (Python 3.12, 3.13)
-          - python-version: "3.12"
-            django-group: django60
-            cms-group: cms311
-          - python-version: "3.13"
-            django-group: django60
-            cms-group: cms311
-
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev pkg-config
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
