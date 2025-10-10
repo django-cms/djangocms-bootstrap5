@@ -1,0 +1,78 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }} - Django ${{ matrix.django-version }} - CMS ${{ matrix.cms-version }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Django 4.2 + CMS 3.11 (Python 3.10, 3.11, 3.12)
+          - python-version: "3.10"
+            django-group: django42
+            cms-group: cms311
+          - python-version: "3.11"
+            django-group: django42
+            cms-group: cms311
+          - python-version: "3.12"
+            django-group: django42
+            cms-group: cms311
+
+          # Django 5.1 + CMS 3.11 (Python 3.10, 3.11, 3.12)
+          - python-version: "3.10"
+            django-group: django51
+            cms-group: cms311
+          - python-version: "3.11"
+            django-group: django51
+            cms-group: cms311
+          - python-version: "3.12"
+            django-group: django51
+            cms-group: cms311
+
+          # Django 5.2 + CMS 3.11 (Python 3.10, 3.11, 3.12, 3.13)
+          - python-version: "3.10"
+            django-group: django52
+            cms-group: cms311
+          - python-version: "3.11"
+            django-group: django52
+            cms-group: cms311
+          - python-version: "3.12"
+            django-group: django52
+            cms-group: cms311
+          - python-version: "3.13"
+            django-group: django52
+            cms-group: cms311
+
+          # Django 6.0 + CMS 3.11 (Python 3.12, 3.13)
+          - python-version: "3.12"
+            django-group: django60
+            cms-group: cms311
+          - python-version: "3.13"
+            django-group: django60
+            cms-group: cms311
+
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --group test --group ${{ matrix.django-group }} --group ${{ matrix.cms-group }}
+
+      - name: Run tests
+        run: uv run pytest tests/ -v
+
