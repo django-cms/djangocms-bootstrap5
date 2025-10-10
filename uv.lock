@@ -8,7 +8,6 @@ resolution-markers = [
 conflicts = [[
     { package = "djangocms-bootstrap5", group = "django42" },
     { package = "djangocms-bootstrap5", group = "django51" },
-    { package = "djangocms-bootstrap5", group = "django52" },
 ]]
 
 [[package]]
@@ -16,7 +15,7 @@ name = "asgiref"
 version = "3.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "typing-extensions", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/46/08/4dfec9b90758a59acc6be32ac82e98d1fbfc321cb5cfa410436dbacf821c/asgiref-3.10.0.tar.gz", hash = "sha256:d89f2d8cd8b56dada7d52fa7dc8075baa08fb836560710d38c292a7a3f78c04e", size = 37483, upload-time = "2025-10-05T09:15:06.557Z" }
 wheels = [
@@ -215,7 +214,7 @@ wheels = [
 
 [package.optional-dependencies]
 toml = [
-    { name = "tomli", marker = "python_full_version <= '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "tomli", marker = "python_full_version <= '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 
 [[package]]
@@ -245,9 +244,8 @@ name = "dj-database-url"
 version = "3.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/75/05/2ec51009f4ce424877dbd8ad95868faec0c3494ed0ff1635f9ab53d9e0ee/dj_database_url-3.0.1.tar.gz", hash = "sha256:8994961efb888fc6bf8c41550870c91f6f7691ca751888ebaa71442b7f84eff8", size = 12556, upload-time = "2025-07-02T09:40:11.424Z" }
 wheels = [
@@ -263,9 +261,9 @@ resolution-markers = [
     "python_full_version < '3.12'",
 ]
 dependencies = [
-    { name = "asgiref", marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "sqlparse", marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "tzdata", marker = "(sys_platform == 'win32' and extra == 'group-20-djangocms-bootstrap5-django42') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "asgiref", marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "sqlparse", marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "tzdata", marker = "(sys_platform == 'win32' and extra == 'group-20-djangocms-bootstrap5-django42') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/de/f1/230c6c20a77f8f1812c01dfd0166416e7c000a43e05f701b0b83301ebfc1/django-4.2.25.tar.gz", hash = "sha256:2391ab3d78191caaae2c963c19fd70b99e9751008da22a0adcc667c5a4f8d311", size = 10456257, upload-time = "2025-10-01T15:05:55.963Z" }
 wheels = [
@@ -281,31 +279,13 @@ resolution-markers = [
     "python_full_version < '3.12'",
 ]
 dependencies = [
-    { name = "asgiref", marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "sqlparse", marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "tzdata", marker = "(sys_platform == 'win32' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "asgiref" },
+    { name = "sqlparse" },
+    { name = "tzdata", marker = "(sys_platform == 'win32' and extra != 'group-20-djangocms-bootstrap5-django42') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/bb/57/ad9905d03a2ee39064ee7ba69f8e2790db4a7ffaef9c54f95e7a8f2cb0a1/django-5.1.13.tar.gz", hash = "sha256:543ff21679f15e80edfc01fe7ea35f8291b6d4ea589433882913626a7c1cf929", size = 10742756, upload-time = "2025-10-01T14:25:41.187Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6c/f2/4b39467b74de9bb698c95232011e97dc848f490baae8d78c2e58848c4562/django-5.1.13-py3-none-any.whl", hash = "sha256:06f257f79dc4c17f3f9e23b106a4c5ed1335abecbe731e83c598c941d14fbeed", size = 8277515, upload-time = "2025-10-01T14:25:28.65Z" },
-]
-
-[[package]]
-name = "django"
-version = "5.2.7"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.12'",
-    "python_full_version < '3.12'",
-]
-dependencies = [
-    { name = "asgiref" },
-    { name = "sqlparse" },
-    { name = "tzdata", marker = "(sys_platform == 'win32' and extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/b1/96/bd84e2bb997994de8bcda47ae4560991084e86536541d7214393880f01a8/django-5.2.7.tar.gz", hash = "sha256:e0f6f12e2551b1716a95a63a1366ca91bbcd7be059862c1b18f989b1da356cdd", size = 10865812, upload-time = "2025-10-01T14:22:12.081Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/8f/ef/81f3372b5dd35d8d354321155d1a38894b2b766f576d0abffac4d8ae78d9/django-5.2.7-py3-none-any.whl", hash = "sha256:59a13a6515f787dec9d97a0438cd2efac78c8aca1c80025244b0fe507fe0754b", size = 8307145, upload-time = "2025-10-01T14:22:49.476Z" },
 ]
 
 [[package]]
@@ -315,7 +295,7 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dj-database-url" },
     { name = "docopt" },
-    { name = "setuptools", marker = "python_full_version >= '3.12' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "setuptools", marker = "python_full_version >= '3.12' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
     { name = "six" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c2/19/14a2c5be244759a0b9c12e6a65b71720339782f500c1b24f8183ebd69715/django_app_helper-3.3.5.tar.gz", hash = "sha256:56394f31d299cc83f1121517072665179a8e1ce1df7f0eeb2668e09255b7b4eb", size = 52034, upload-time = "2025-06-05T09:04:56.554Z" }
@@ -328,9 +308,8 @@ name = "django-classy-tags"
 version = "4.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/91/7f/18da9d8fcc469fc7aa74abc526aacaa3cc7180ad2208f80d43e8b670aed6/django-classy-tags-4.1.0.tar.gz", hash = "sha256:c8d9d1aa2fa6e71c4d866df4dd11d23a69b8d25bbb750b2490a17b161774ee59", size = 24692, upload-time = "2023-07-29T09:06:18.646Z" }
 wheels = [
@@ -342,9 +321,8 @@ name = "django-cms"
 version = "3.11.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
     { name = "django-classy-tags" },
     { name = "django-formtools" },
     { name = "django-sekizai" },
@@ -362,9 +340,8 @@ name = "django-filer"
 version = "3.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
     { name = "django-polymorphic" },
     { name = "easy-thumbnails", extra = ["svg"] },
 ]
@@ -378,9 +355,8 @@ name = "django-formtools"
 version = "2.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/73/f8/bb9b228fc33230186f3612a6fc96274a81bab3509817498f2632d7aa6367/django-formtools-2.5.1.tar.gz", hash = "sha256:47cb34552c6efca088863d693284d04fc36eaaf350eb21e1a1d935e0df523c93", size = 88637, upload-time = "2023-12-19T10:30:59.78Z" }
 wheels = [
@@ -392,9 +368,8 @@ name = "django-js-asset"
 version = "3.1.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/e6/91/c63f136f553ec24fc46ccf20ac7292a8df04815b383975b6f3f7f0060217/django_js_asset-3.1.2.tar.gz", hash = "sha256:1fc7584199ed1941ed7c8e7b87ca5524bb0f2ba941561d2a104e88ee9f07bedd", size = 9471, upload-time = "2025-03-04T15:22:49.789Z" }
 wheels = [
@@ -418,9 +393,8 @@ name = "django-polymorphic"
 version = "4.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/7a/4c/b8dc06147602b4c990e1094a1f230771fd65b2f9c1107f28afe1461ee249/django_polymorphic-4.1.0.tar.gz", hash = "sha256:4438d95a0aef6c4307cd6c83ead387e1142ce80b65188a931ec2f0dbdd9bfc51", size = 49696, upload-time = "2025-05-20T16:32:24.424Z" }
 wheels = [
@@ -432,9 +406,8 @@ name = "django-sekizai"
 version = "4.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
     { name = "django-classy-tags" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/be/b7/399f7d84fa34c67e7c8e1da39744c9a2f83b61fa600c854cbe43bf6aab56/django-sekizai-4.1.0.tar.gz", hash = "sha256:2aca36cbae0b5c0cefed9565416ec442335767fb3145bff11e58622fc653cdad", size = 14591, upload-time = "2023-05-02T15:39:23.417Z" }
@@ -447,9 +420,8 @@ name = "django-treebeard"
 version = "4.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/03/2f/f5fa935ce967e5a6a501bee9773b9fb1acd70a6490af3b6d8d341dcc6f14/django-treebeard-4.4.tar.gz", hash = "sha256:f50e4eea146f7af6702decf7ef198ac1eee1fb9bb4af2c5dba276c3c48f76623", size = 310658, upload-time = "2021-01-13T09:29:38.502Z" }
 wheels = [
@@ -473,9 +445,8 @@ name = "djangocms-admin-style"
 version = "3.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6c/1e/47b2d031c6d8f4ac5394b4b3dc863a8f21fd6d92aadf260ba1fc633b286f/djangocms-admin-style-3.3.1.tar.gz", hash = "sha256:da20de3831f1a1a74de33fe12bbd3865a0027a982878c02aa1d102b1c799d767", size = 319126, upload-time = "2024-02-29T22:12:45.167Z" }
 wheels = [
@@ -499,6 +470,8 @@ name = "djangocms-bootstrap5"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
     { name = "django-cms" },
     { name = "django-filer" },
     { name = "django-upgrade" },
@@ -524,9 +497,6 @@ django42 = [
 django51 = [
     { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" } },
 ]
-django52 = [
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" } },
-]
 test = [
     { name = "coverage", extra = ["toml"] },
     { name = "django-app-helper" },
@@ -538,6 +508,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
+    { name = "django", specifier = ">=4.2,<5.2" },
     { name = "django-cms", specifier = ">=3.8" },
     { name = "django-filer", specifier = ">=1.7" },
     { name = "django-upgrade", specifier = ">=1.21.0" },
@@ -559,7 +530,6 @@ dev = [
 ]
 django42 = [{ name = "django", specifier = "==4.2.*" }]
 django51 = [{ name = "django", specifier = "==5.1.*" }]
-django52 = [{ name = "django", specifier = "==5.2.*" }]
 test = [
     { name = "coverage", extras = ["toml"] },
     { name = "django-app-helper" },
@@ -637,9 +607,8 @@ name = "easy-thumbnails"
 version = "2.10.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42' or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "django", version = "5.2.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django52' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra != 'group-20-djangocms-bootstrap5-django42' and extra != 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "django", version = "4.2.25", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django42'" },
+    { name = "django", version = "5.1.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-20-djangocms-bootstrap5-django51' or extra != 'group-20-djangocms-bootstrap5-django42'" },
     { name = "pillow" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/04/2f/71f17c3ce65b25dd8fc8e513738c8496eadbd8bab94f39509a511ff99704/easy_thumbnails-2.10.1.tar.gz", hash = "sha256:a50aa5f99387546c35ab5ba1ea9b3cbbc5658e65601cd34949f62137c32c222e", size = 81446, upload-time = "2025-08-17T20:49:11.308Z" }
@@ -658,7 +627,7 @@ name = "exceptiongroup"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.12' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "typing-extensions", marker = "python_full_version < '3.12' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/0b/9f/a65090624ecf468cdca03533906e7c69ed7588582240cfe7cc9e770b50eb/exceptiongroup-1.3.0.tar.gz", hash = "sha256:b241f5885f560bc56a59ee63ca4c6a8bfa46ae4ad651af316d4e81817bb9fd88", size = 29749, upload-time = "2025-05-10T17:42:51.123Z" }
 wheels = [
@@ -1000,7 +969,7 @@ version = "1.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "packaging" },
-    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/45/7b/c0e1333b61d41c69e59e5366e727b18c4992688caf0de1be10b3e5265f6b/pyproject_api-1.10.0.tar.gz", hash = "sha256:40c6f2d82eebdc4afee61c773ed208c04c19db4c4a60d97f8d7be3ebc0bbb330", size = 22785, upload-time = "2025-10-09T19:12:27.21Z" }
 wheels = [
@@ -1012,13 +981,13 @@ name = "pytest"
 version = "8.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "sys_platform == 'win32' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "exceptiongroup", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "colorama", marker = "sys_platform == 'win32' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "exceptiongroup", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
     { name = "iniconfig" },
     { name = "packaging" },
     { name = "pluggy" },
     { name = "pygments" },
-    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a3/5c/00a0e072241553e1a7496d638deababa67c5058571567b92a7eaa258397c/pytest-8.4.2.tar.gz", hash = "sha256:86c0d0b93306b961d58d62a4db4879f27fe25513d4b969df351abdddb3c30e01", size = 1519618, upload-time = "2025-09-04T14:34:22.711Z" }
 wheels = [
@@ -1201,8 +1170,8 @@ dependencies = [
     { name = "platformdirs" },
     { name = "pluggy" },
     { name = "pyproject-api" },
-    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
-    { name = "typing-extensions", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
+    { name = "typing-extensions", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
     { name = "virtualenv" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/be/b9/1750ebb6e8e2d198a17822b7b851dea33e61dcc9c25f55a3e3636f67389a/tox-4.31.0.tar.gz", hash = "sha256:266381ffef35615ec0d40ae4969a9e43b506017597c0413d6545a603cc8c7561", size = 203294, upload-time = "2025-10-09T18:53:53.619Z" }
@@ -1216,7 +1185,7 @@ version = "1.29.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "packaging" },
-    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "tomli", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
     { name = "tox" },
     { name = "uv" },
 ]
@@ -1277,7 +1246,7 @@ dependencies = [
     { name = "distlib" },
     { name = "filelock" },
     { name = "platformdirs" },
-    { name = "typing-extensions", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51') or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django52') or (extra == 'group-20-djangocms-bootstrap5-django51' and extra == 'group-20-djangocms-bootstrap5-django52')" },
+    { name = "typing-extensions", marker = "python_full_version < '3.11' or (extra == 'group-20-djangocms-bootstrap5-django42' and extra == 'group-20-djangocms-bootstrap5-django51')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a4/d5/b0ccd381d55c8f45d46f77df6ae59fbc23d19e901e2d523395598e5f4c93/virtualenv-20.35.3.tar.gz", hash = "sha256:4f1a845d131133bdff10590489610c98c168ff99dc75d6c96853801f7f67af44", size = 6002907, upload-time = "2025-10-10T21:23:33.178Z" }
 wheels = [
