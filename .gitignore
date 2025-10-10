@@ -19,6 +19,9 @@ dist/
 env/
 .venv/
 
+# uv
+.python-version
+
 /~
 /node_modules
 .sass-cache
