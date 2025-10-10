@@ -15,14 +15,14 @@ class B5FieldsTestCase(TestCase):
     def test_tag_type_field(self):
         field = TagTypeField()
         self.assertEqual(field.verbose_name, "Tag type")
-        self.assertEqual(field.choices, (
+        self.assertEqual(list(field.choices), [
             ('div', 'div'),
             ('section', 'section'),
             ('article', 'article'),
             ('header', 'header'),
             ('footer', 'footer'),
             ('aside', 'aside')
-        ))
+        ])
         self.assertEqual(field.default, "div")
         self.assertEqual(field.max_length, 255)
         self.assertEqual(
