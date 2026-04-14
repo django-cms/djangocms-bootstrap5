@@ -4,34 +4,11 @@ django CMS Bootstrap 5 (WIP)
 
 |pypi| |build| |coverage|
 
-**django CMS Bootstrap 5** is a plugin bundle for django CMS providing several
-components from the popular `Bootstrap 5 <http://getbootstrap.com/>`_ library.
+**django CMS Bootstrap 5** was a plugin bundle for django CMS providing several
+components from the popular `Bootstrap 5 <http://getbootstrap.com/>`_ library. It
+was work in progress but got replaced by `djangocms-frontend <https://github.com/django-cms/djangocms-frontend>`_.
 
-
-.. note:: 
-        
-        This project is endorsed by the `django CMS Association <https://www.django-cms.org/en/about-us/>`_.
-        That means that it is officially accepted by the dCA as being in line with our roadmap vision and development/plugin policy. 
-        Join us on `Slack <https://www.django-cms.org/slack/>`_.
-        
-.. image:: preview.gif
-
-
-Contributing
-============
-
-This is a an open-source project. We'll be delighted to receive your
-feedback in the form of issues and pull requests. Before submitting your
-pull request, please review our `contribution guidelines
-<http://docs.django-cms.org/en/latest/contributing/index.html>`_.
-
-We're grateful to all contributors who have helped create and maintain this package.
-Contributors are listed at the `contributors <https://github.com/divio/djangocms-bootstrap5/graphs/contributors>`_
-section.
-
-One of the easiest contributions you can make is helping to translate this addon on
-`Transifex <https://www.transifex.com/projects/p/djangocms-bootstrap5/>`_.
-
+It is now a public archive.
 
 Documentation
 =============
