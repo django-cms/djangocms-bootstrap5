@@ -1,3 +1,4 @@
+from cms.exceptions import PluginNotRegistered
 from django.utils.translation import gettext_lazy as _
 
 from cms.plugin_pool import plugin_pool
@@ -78,5 +79,8 @@ class Bootstrap5LinkPlugin(LinkPlugin):
         )
 
 
-plugin_pool.unregister_plugin(LinkPlugin)
+try:
+    plugin_pool.unregister_plugin(LinkPlugin)
+except PluginNotRegistered:
+    pass
 plugin_pool.register_plugin(Bootstrap5LinkPlugin)

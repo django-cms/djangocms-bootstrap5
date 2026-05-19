@@ -1,5 +1,6 @@
 import copy
 
+from cms.exceptions import PluginNotRegistered
 from django.utils.translation import gettext_lazy as _
 
 from cms.plugin_pool import plugin_pool
@@ -51,5 +52,8 @@ class Bootstrap5PicturePlugin(PicturePlugin):
         )
 
 
-plugin_pool.unregister_plugin(PicturePlugin)
+try:
+    plugin_pool.unregister_plugin(PicturePlugin)
+except PluginNotRegistered:
+    pass
 plugin_pool.register_plugin(Bootstrap5PicturePlugin)
